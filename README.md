@@ -1,6 +1,6 @@
 # VergeNewsScraper
 
-his app uses Cheerio to scrape news articles from a specific news site and allows the user to make comments on each artcle and delete them. The app uses a Mongo databse and Mongoose to store comments and articles and is deployed via Heroku.
+This app uses Cheerio to scrape news articles from a specific news site and allows the user to make comments on each artcle and delete them. The app uses a Mongo databse and Mongoose to store comments and articles and is deployed via Heroku.
 
 ## Live Heroku App Link
 https://arcane-stream-69281.herokuapp.com/
