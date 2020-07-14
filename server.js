@@ -2,10 +2,13 @@
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var logger = require('morgan');
+var Handlebars = require('handlebars');
+
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 
 //initialize Express app
 var express = require('express');
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({
@@ -16,7 +19,7 @@ app.use(express.static(process.cwd() + '/public'));
 
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
-  defaultLayout: 'main'
+  handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
 app.set('view engine', 'handlebars');
 
