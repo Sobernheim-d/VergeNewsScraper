@@ -25,7 +25,9 @@
     "materialize": "^1.0.0",
     "mongoose": "^5.9.23",
     "morgan": "^1.10.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "handlebars": "^4.5.0",
+    "express-handlebars": "^3.1.0"
   },
   "devDependencies": {
     "express-handlebars": "^3.1.0",
