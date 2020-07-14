@@ -15,10 +15,12 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use(express.static(process.cwd() + '/public'));
+//app.use(express.static(process.cwd() + '/public'));
+app.use(express.static("public"))
 
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
+  defaultLayout:"main",
   handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
 app.set('view engine', 'handlebars');
