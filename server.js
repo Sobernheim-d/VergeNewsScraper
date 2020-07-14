@@ -26,7 +26,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/'mongodb://heroku_jxkjhg1v:6s68tem51mlionrj2sneb7b53c@ds127988.mlab.com:27988/heroku_jxkjhg1v";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_jxkjhg1v:6s68tem51mlionrj2sneb7b53c@ds127988.mlab.com:27988/heroku_jxkjhg1v";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true });
 
 // mongoose.connect('mongodb://heroku_jxkjhg1v:6s68tem51mlionrj2sneb7b53c@ds127988.mlab.com:27988/heroku_jxkjhg1v');
